@@ -5,6 +5,7 @@ use rand::Rng;
 fn main() {
     let secret_number = rand::thread_rng().gen_range(1..=100);
     
+    loop {
     println!("Guess the number: ");
 
         let mut guess = String::new();
@@ -25,6 +26,8 @@ fn main() {
             break;
         }
     }
+
+  }
 
 }
 
